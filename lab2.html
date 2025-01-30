@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>child Vaccination system</title>
+</head>
+<body>
+	<center>
+	<h1>Child Vaccination system Registration Form</h1>
+	</center>
+	<form>
+		<fieldset>
+			<legend>Basic Information</legend>
+			Child's Name:<input type="text" name="username" placeholder="user name" required >
+			<br><br>
+			Parents Email:<input type="email" name="pmail" placeholder="joy@gmail.com" required>
+			<br><br>
+			Password:<input type="password" name="pass"  required> 
+			<br><br>
+			Date of Birth:<input type="date" name="DOB"  required>
+			<br><br>
+
+			Gender:
+			<input type="radio" name="gender" value="Male" required>Male
+			<input type="radio" name="gender" value="Female"  required>Female
+			<br>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Medical History</legend>
+			Previous Vaccination:
+			<ol>
+				<li>
+					<input type="checkbox" name="vaccine" value="Chickenpox">Chickenpox
+					<br>
+				</li>
+
+				<li>
+					<input type="checkbox" name="vaccine" value="COVID-19">Covid-19
+					<br>
+				</li>
+				<li>
+					<input type="checkbox" name="vaccine" value="Polio">Polio
+					<br>
+				</li>
+				<li>
+					<input type="checkbox" name="vaccine" value="Dengue">Dengue
+					<br>
+
+					Parents Contact:
+					<input type="number" name="phone" pattern="[0-9]{11}" minlength="11" maxlength="11" required>
+					<br><br>
+
+					Previous Medical History:
+					<br>
+					<textarea></textarea>
+					<br>
+					<br>
+
+					Upload Birth Certification:
+					<br>
+					<input type="file" name="cert" accept="image/jpg, image/png">
+					<br></fieldset><br>
+
+					<input type="submit" name="submit" value="submit"  required>
+					<input type="reset" name="reset" value="reset"  required>
+				
+				</li>
+
+			</ol>
+		
+	</form>
+
+</body>
+</html>
